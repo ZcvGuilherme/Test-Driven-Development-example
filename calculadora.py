@@ -1,17 +1,19 @@
 def soma(a, b):
-    pass
+    return a + b
 
 def subtrair(a, b):
-    pass
+    return a - b
 
 def multiplicar(a, b):
-    pass
+    return a * b
 
 def dividir(a, b):
-    pass
+    return a / b
 
 def isPar(numero):
-    pass
+    return (numero % 2) == 0
 
 def validarNumeroPositivo(numero):
-    pass
+    if numero == 0:
+        raise ValueError
+    return numero > 0
