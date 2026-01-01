@@ -1,0 +1,64 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Ambientes virtuais
+venv/
+.venv/
+env/
+ENV/
+
+# =========================
+# Pytest
+# =========================
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# =========================
+# Logs e arquivos temporários
+# =========================
+*.log
+*.tmp
+*.bak
+*.swp
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+!.vscode/extensions.json
+
+# =========================
+# Sistema operacional
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Distribuição / build
+# =========================
+build/
+dist/
+*.egg-info/
+
+# =========================
+# Jupyter / notebooks
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Arquivos de ambiente
+# =========================
+.env
+.env.*
+
+# =========================
+# Outros
+# =========================
+*.sqlite3
