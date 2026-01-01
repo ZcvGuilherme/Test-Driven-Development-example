@@ -14,63 +14,63 @@ class TestSoma:
         assert soma(3,-5) == -2
 
 class TestSubtracao:
-    def test_subtracao_dois_numeros():
+    def test_subtracao_dois_numeros(self):
         assert subtrair(10, 4) == 6
 
 
-    def test_subtracao_resultado_negativo():
+    def test_subtracao_resultado_negativo(self):
         assert subtrair(3, 5) == -2
 
 
-    def test_subtracao_valores_iguais():
+    def test_subtracao_valores_iguais(self):
         assert subtrair(7, 7) == 0
 
 class TestMultiplicacao:
-    def test_multiplicacao_dois_positivos():
+    def test_multiplicacao_dois_positivos(self):
         assert multiplicar(3, 4) == 12
 
 
-    def test_multiplicacao_por_zero():
+    def test_multiplicacao_por_zero(self):
         assert multiplicar(5, 0) == 0
 
 
-    def test_multiplicacao_com_negativos():
+    def test_multiplicacao_com_negativos(self):
         assert multiplicar(-2, 4) == -8
 
 class TestDivisao:
-    def test_divisao_correta():
+    def test_divisao_correta(self):
         assert dividir(10, 2) == 5
 
 
-    def test_divisao_por_zero():
+    def test_divisao_por_zero(self):
         with raises(ZeroDivisionError):
             dividir(10, 0)
 
 
-    def test_divisao_com_decimais():
+    def test_divisao_com_decimais(self):
         assert dividir(5, 2) == 2.5
 
 class TestIsPar:
-    def test_numero_par():
+    def test_numero_par(self):
         assert isPar(4) is True
 
 
-    def test_numero_impar():
+    def test_numero_impar(self):
         assert isPar(5) is False
 
 
-    def test_zero_e_par():
+    def test_zero_e_par(self):
         assert isPar(0) is True
 
 class TestIsPositive:
-    def test_numero_positivo():
+    def test_numero_positivo(self):
         assert validarNumeroPositivo(5) is True
 
 
-    def test_numero_negativo():
+    def test_numero_negativo(self):
         assert validarNumeroPositivo(-3) is False
 
 
-    def test_zero_lanca_excecao():
+    def test_zero_lanca_excecao(self):
         with raises(ValueError):
             validarNumeroPositivo(0)
